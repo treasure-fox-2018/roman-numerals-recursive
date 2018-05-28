@@ -1,6 +1,21 @@
 function toRoman(input) {
   // start your code here
-  return to_roman(input);
+  var formula = [
+    ["M" ,1000],["CM",900],["D",500],["CD",400],["C",100],["XC",90],["L",50],["XL",40],["X",10],["IX",9],["V",5],["IV",4],["I",1]
+  ]
+  let tempt =""
+  if(input == 0){
+    return ''
+  }else{
+    for(let i=0;i<formula.length;i++){
+      if(input>=formula[i][1]){
+        tempt+=formula[i][0]
+        input-=formula[i][1]
+      }
+    }
+    return tempt
+  }
+  // return to_roman(input);
 }
 
 console.log('My totally sweet testing script for new roman\n')
