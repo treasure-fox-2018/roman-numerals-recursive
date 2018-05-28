@@ -7,7 +7,7 @@ function toRoman(input) {
   } else {
     for (let i = 0; i < decimal.length; i++) {
       while (input >= decimal[i]) {
-        input -= decimal[i];
+        input -= decimal[i]
         return roman[i] + toRoman(input)
       }
     }
