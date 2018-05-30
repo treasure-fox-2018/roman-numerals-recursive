@@ -1,6 +1,5 @@
-function toRoman(input) {
+function toRoman(num) {
   // start your code here
-
   var obj = {}
   obj['M'] = 1000
   obj['CM'] = 900
@@ -33,4 +32,4 @@ console.log('23    | XXIII    | ', toRoman(23))
 console.log('1453  | MCDLIII  | ', toRoman(1453))
 console.log('1646  | MDCXLVI  | ', toRoman(1646))
 
-module.exports = toRoman
+// module.exports = toRoman
